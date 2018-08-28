@@ -33,4 +33,8 @@ words = jieba.cut(content, cut_all=True)
 jieba.cut_for_search(Content)
 ~~~
 
-### 斷詞
+### 新建自訂分詞器
+新建自訂分詞器，可用於同時使用不同詞典。jieba.dt 為默認分詞器，所有全域分詞相關函數都是該分詞器的映射
+~~~
+jieba.Tokenizer(dictionary=DEFAULT_DICT)
+~~~
