@@ -7,7 +7,7 @@ pip install jieba
 ~~~
 * NLTK
 ~~~
-pip install jieba
+pip install nltk
 ~~~
 ### Import Library
 ~~~
