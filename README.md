@@ -12,6 +12,12 @@ import jieba
 import jieba.analyse as jalz
 import jieba.posseg as japseg
 ~~~
+
+### 使用者定義詞庫 
+~~~
+jieba.load_userdict('user_dict.txt') 
+~~~
+
 ### 分詞
 * 精確模式 ：將句子最精確地切開，適合文本分析。
 ~~~
