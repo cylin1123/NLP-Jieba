@@ -12,8 +12,18 @@ import jieba
 import jieba.analyse as jalz
 import jieba.posseg as japseg
 ~~~
-### 斷詞
+### 分詞
+* 精確模式 ：將句子最精確地切開，適合文本分析。
 ~~~
- japseg.cut(sentence)
+words = jieba.cut(content, cut_all=False)
+~~~   
+* 全模式：句子中所有的可以成詞的詞語都掃描出來, 速度快。
 ~~~
+words = jieba.cut(content, cut_all=True)
+~~~   
+* 搜索引勤模式：在精確模式的基礎上針對長詞再次進行切分，提高召回率，適合用於搜尋引擎分詞。
+~~~
+jieba.cut_for_search(Content)
+~~~
+
 ### 斷詞
