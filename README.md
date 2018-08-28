@@ -5,7 +5,10 @@
 ~~~
 pip install jieba
 ~~~
-
+* NLTK
+~~~
+pip install jieba
+~~~
 ### Import Library
 ~~~
 import jieba
