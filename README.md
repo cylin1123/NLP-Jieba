@@ -14,6 +14,7 @@ import jieba.posseg as japseg
 ~~~
 
 ### 使用者定義詞庫 
+詞典格式 : 一個詞一行；每一行分三部分：詞語、詞頻（可省略）、詞性（可省略），用空格隔開，順序不可顛倒。
 ~~~
 jieba.load_userdict('user_dict.txt') 
 ~~~
